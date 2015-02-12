@@ -1,8 +1,9 @@
 var React = require('react');
 var div = React.DOM.div;
 
-var shouldUpdate = require('omniscient/shouldupdate');
-shouldUpdate.debug();
+var omniscient = require('omniscient');
+omniscient.debug();
+var shouldUpdate = omniscient.shouldComponentUpdate;
 
 var ShouldComponentUpdateMixin = [{ shouldComponentUpdate: shouldUpdate }];
 
